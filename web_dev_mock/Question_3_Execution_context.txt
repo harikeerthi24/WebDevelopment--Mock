@@ -1,0 +1,50 @@
+Execution context:
+
+-->Execution context in JavaScript refers to the environment in which the code is executed.
+-->It consists of the variable environment, lexical environment, and the value of 'this'. 
+-->The execution context determines the scope, accessibility, and lifetime of variables and functions during the execution of the code.
+To understand execution context, let's break it down into two main types:
+
+1. Global Execution Context:
+            The global execution context is the default context when JavaScript code is first run. 
+            It includes the global object (window object in browsers) and the 'this' value refers to the global object. 
+            The global execution context sets up the global scope and makes variables and functions available throughout the code.
+
+2. Function Execution Context:
+            When a function is called, a new function execution context is created. 
+            Each function call has its own execution context, which includes its own variable environment and lexical environment. 
+            The 'this' value within the function execution context depends on how the function is called.
+
+diagram illustrating the relationship between global execution context and function execution contexts:
+
+```
+-------------------------------------------
+|             Global Execution Context     |
+|-----------------------------------------|
+|     Variable Environment (Global Scope) |
+|           Lexical Environment            |
+|              this (global object)        |
+-------------------------------------------
+            ^
+            |
+            | Function Call
+            |
+-------------------------------------------
+|          Function Execution Context      |
+|-----------------------------------------|
+|       Variable Environment (Local Scope) |
+|           Lexical Environment            |
+|                this (function object)    |
+-------------------------------------------
+```
+
+In the diagram,
+-->The global execution context is at the top, representing the initial state when the code starts executing. 
+The function execution context is created when a function is called, forming a stack of execution contexts. 
+Each function execution context has its own variable environment and lexical environment, which handle variable declarations and function definitions within the function's scope.
+
+-->The function execution context is popped off the stack when the function finishes executing, 
+    returning control to the previous execution context.
+
+Overall, the execution context provides the necessary environment for the code to run, 
+manages scope and variable accessibility, and determines the value of 'this' within the code execution.

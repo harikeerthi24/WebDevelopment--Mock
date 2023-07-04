@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant_menucard</title>
+    <style>
+        .hero-container{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+                            "Lucida Sans", Arial, sans-serif;
+            align-content: center;
+        }
+        .text-section{
+           padding-top: 120px;
+        }
+        .text-section>h1{
+            font-size: 50px;
+        }
+        .text-section>button{
+            background-color: black;
+            color: aliceblue;
+            padding: 10px 20px;
+            margin-top: 30px;
+            font-size: large
+        }
+        .text-section>p{
+            align-content: center;
+        }
+        .image-section{
+            background-color: yellow;
+            height: 100%;
+        }
+        nav{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            max-width: 100%;
+            font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+                            "Lucida Sans", Arial, sans-serif;
+            align-items: center;
+        }
+        nav>img{
+            max-width: 40px;
+        }
+        nav>div{
+            grid-column: 2;
+            padding-top: 2px;
+        }
+        nav>div>a{
+            align-content: center;
+            color: black;
+            padding-right: 50px;
+            text-decoration: none;
+        }
+        nav>div>a:hover{
+            font-weight: bold;
+        }
+        nav>button{
+            background-color: rgb(97, 232, 97);
+            color: black;
+            max-width: 40%;
+            padding: 6px;
+            border-radius: 10px;
+            margin: 10px;
+            margin-left: 60%;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <img
+          src="https://png.pngtree.com/png-clipart/20230401/original/pngtree-healthy-food-logo-design-with-chopstick-png-image_9016805.png"
+          alt="Logo"
+        />
+        <div>
+          <a href="#">Home</a><a href="#">About</a><a href="#">Contact</a>
+        </div>
+        <button>Login</button>
+    </nav>
+    <div class="hero-container">
+        <section class="text-section">
+          <h1>Healthy Food</h1>
+          <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+                eligendi aut, at mollitia, rem voluptate illo minus sit iusto suscipit
+                ipsa voluptas velit nemo, hic excepturi? Qui accusantium accusamus ea!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+                eligendi aut, at mollitia, rem voluptate illo minus sit iusto suscipit
+                ipsa voluptas velit nemo, hic excepturi? Qui accusantium accusamus ea!
+          </p>
+          <button>Read More</button>
+        </section>
+        <section class="image-section">
+          <img
+            src="https://media.istockphoto.com/id/870173346/photo/healthy-food.jpg?s=612x612&w=0&k=20&c=g6ewhe862ZaSQevMw7VS-VJzwXXEHL6Gqpr-fEDx0jY="
+            alt="Healthy Food"
+          />
+        </section>
+      </div>
+</body>
+</html>

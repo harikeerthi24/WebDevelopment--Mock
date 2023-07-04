@@ -1,0 +1,60 @@
+<!-- The position property in CSS tells about the method of positioning for an element or an HTML 
+entity and the positioning of an element can be done using the top, right, bottom, and left 
+properties. There are five different types of position property available in CSS:
+
+1.Static: The default value. Elements are positioned according to the normal flow of the page.
+2.Relative: Elements are positioned relative to their normal position.
+3.Absolute: The element is positioned relative to its nearest positioned ancestor
+                instead of positioned relative to the viewport, like fixed.
+4.Fixed: The element is positioned relative to the viewport, which means it always stays in the 
+                same place even if the page is scrolled.
+5.Sticky: The element is positioned based on the user’s scroll position. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .static-position{
+            position: static;
+            border: 3px solid #73AD21;
+        }
+        .fixed-position {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: lightblue;
+        }
+        .sticky-position {
+            position: sticky;
+            top: 50px;
+            background-color: blue;
+        }
+        .relative-position {
+            position: relative;
+            left: 50px;
+            background-color: pink;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="static-position">
+        This is a static positioned element.
+        <p>An element with position: static; is not positioned in any special way; it is always positioned according to the normal flow of the page:</p>
+
+    </div>
+        <div class="fixed-position">
+            This is a fixed positioned element.
+        </div>
+        <div class="sticky-position">
+            This is a sticky positioned element.
+        </div>
+        <div class="relative-position">
+            This is a relatively positioned element.
+    </div>
+            
+</body>
+</html>
